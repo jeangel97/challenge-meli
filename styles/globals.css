@@ -14,3 +14,224 @@ a {
 * {
   box-sizing: border-box;
 }
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: dense;
+}
+.col-justify-items-start{
+  -ms-justify-items:start;
+  justify-items:start;
+}
+.col-justify-items-end{
+  -ms-justify-items:end;
+  justify-items:end;
+}
+.col-justify-items-center{
+  -ms-justify-items:center;
+  justify-items:center;
+}
+.col-justify-items-stretch{
+  -ms-justify-items:stretch;
+  justify-items:stretch;
+}
+.col-align-items-start{
+  -ms-align-items:start;
+  align-items:start;
+}
+.col-align-items-end{
+  -ms-align-items:end;
+  align-items:end;
+}
+.col-align-items-center{
+  -ms-align-items:center;
+  align-items:center;
+}
+.col-align-items-stretch{
+  -ms-align-items:stretch;
+  align-items:stretch;
+}
+.col-justify-content-start{
+  -ms-justify-content:start;
+  justify-content:start;
+}
+.col-justify-content-end{
+  -ms-justify-content:end;
+  justify-content:end;
+}
+.col-justify-content-center{
+  -ms-justify-content:center;
+  justify-content:center;
+}
+.col-justify-content-stretch{
+  -ms-justify-content:stretch;
+  justify-content:stretch;
+}
+.col-justify-content-space-around{
+  -ms-justify-content:space-around;
+  justify-content:space-around;
+}
+.col-justify-content-space-between{
+ -ms-justify-content:space-between; 
+  justify-content:space-between;
+}
+.col-justify-content-space-evenly{
+  -ms-justify-content:space-evenly;
+  justify-content:space-evenly;
+}
+.col-align-content-start{
+  -ms-align-content:start;
+  align-content:start;
+}
+.col-align-content-end{
+  -ms-align-content:end;
+  align-content:end;
+}
+.col-align-content-center{
+  -ms-align-content:center;
+  align-content:center;
+}
+.col-align-content-stretch{
+  -ms-align-content:stretch;
+  align-content:stretch;
+}
+.col-align-content-space-around{
+  -ms-align-content:space-around;
+  align-content:space-around;
+}
+.col-align-content-space-between{
+  -ms-align-content:start;
+  align-content:space-between;
+}
+.col-align-content-space-evenly{
+  -ms-align-content:end;
+  align-content:space-evenly;
+}
+
+.col-1{
+  -ms-grid-column-end: span 1;
+  grid-column-end: span 1;
+}
+.col-2{
+  -ms-grid-column-end: span 2;
+  grid-column-end: span 2;
+}
+.col-3{
+  -ms-grid-column-end: span 3;
+  grid-column-end: span 3;
+}
+.col-4{
+  -ms-grid-column-end: span 4;
+  grid-column-end: span 4;
+}
+.col-5{
+  -ms-grid-column-end: span 5;
+  grid-column-end: span 5;
+}
+.col-6{
+  -ms-grid-column-end: span 6;
+  grid-column-end: span 6;
+}
+.col-7{
+  -ms-grid-column-end: span 7;
+  grid-column-end: span 7;
+}
+.col-8{
+  -ms-grid-column-end: span 8;
+  grid-column-end: span 8;
+}
+.col-9{
+  -ms-grid-column-end: span 9;
+  grid-column-end: span 9;
+}
+.col-10{
+  -ms-grid-column-end: span 10;
+  grid-column-end: span 10;
+}
+.col-11{
+  -ms-grid-column-end: span 11;
+  grid-column-end: span 11;
+}
+.col-12{
+  -ms-grid-column-end: span 12;
+  grid-column-end: span 12;
+}
+
+.col-offset-2{
+  -ms-grid-column-start: 2;
+  grid-column-start: 2;
+}
+.col-offset-3{
+  -ms-grid-column-start: 3;
+  grid-column-start: 3;
+}
+.col-offset-4{
+  -ms-grid-column-start: 4;
+  grid-column-start: 4;
+}
+.col-offset-5{
+  -ms-grid-column-start: 5;
+  grid-column-start: 5;
+}
+.col-offset-6{
+  -ms-grid-column-start: 6;
+  grid-column-start: 6;
+}
+.col-offset-7{
+  -ms-grid-column-start: 7;
+  grid-column-start: 7;
+}
+.col-offset-8{
+  -ms-grid-column-start: 8;
+  grid-column-start: 8;
+}
+.col-offset-9{
+  -ms-grid-column-start: 9;
+  grid-column-start: 9;
+}
+.col-offset-10{
+  -ms-grid-column-start: 10;
+  grid-column-start: 10;
+}
+.col-offset-11{
+  -ms-grid-column-start: 11;
+  grid-column-start: 11;
+}
+.col-offset-12{
+  -ms-grid-column-start: 12;
+  grid-column-start: 12;
+}
+
+.col-justify-self-start{
+  -ms-justify-self:start;
+  justify-self:start;
+}
+.col-justify-self-end{
+  -ms-justify-self:end;
+  justify-self:end;
+}
+.col-justify-self-center{
+  -ms-justify-self:center;
+  justify-self:center;
+}
+.col-justify-self-stretch{
+ -ms-justify-self:stretch;
+  justify-self:stretch;
+}
+
+.col-align-self-start{
+ -ms-justify-self:start;
+  align-self:start;
+}
+.col-align-self-end{
+  -ms-align-self:end;
+  align-self:end;
+}
+.col-align-self-center{
+  -ms-align-self:center;
+  align-self:center;
+}
+.col-align-self-stretch{
+  -ms-align-self:stretch;
+  align-self:stretch;
+}

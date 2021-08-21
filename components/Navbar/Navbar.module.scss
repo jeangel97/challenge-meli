@@ -1,0 +1,44 @@
+.navbar{
+    background-color: #fff159;
+    height: 50px;
+    margin: 0 -9999rem;
+}
+.navContainer{
+    margin: 0 9999em;
+    display: flex;
+    align-items: center;
+    flex: 1 1 0px;
+    height: 50px;
+
+}
+.navLogo{
+    background-image: url("../../assets/Logo_ML.png");
+    height: 32px;
+    top: 8px;
+    width: 47px;
+    background-size: cover;
+    align-self: center;
+    margin-right: 20px;
+
+}
+.searchText{
+    height: 32px;
+    border: none;
+    align-self: center;
+    font-size: 18px;
+    flex: 1;
+    padding: 7px 60px 9px 15px;
+}
+.btnNavbar{
+    height: 32px;
+    border: none;
+    padding: 10px 10px;
+}
+.iconBtn{
+    color: grey;
+    height: 15px ;
+    width: 15px ;
+    &:hover {
+        cursor: pointer;
+    }
+}
