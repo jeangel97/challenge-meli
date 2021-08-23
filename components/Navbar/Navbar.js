@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -45,7 +44,7 @@ export default function Navbar() {
         </Link>
         <input className={styles.searchText} aria-label="search_input" type="text" placeholder="Nunca dejes de buscar" onChange={handleChange} onKeyDown={handleKeyDown} />
         <button type="button" aria-label="search-button" className={styles.btnNavbar} onClick={handleClick}>
-          <FontAwesomeIcon className={styles.iconBtn} icon={faSearch} />
+          <div className={styles.iconBtn} />
         </button>
       </div>
     </div>

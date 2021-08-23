@@ -30,14 +30,18 @@
     padding: 7px 60px 9px 15px;
 }
 .btnNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 32px;
     border: none;
     padding: 10px 10px;
 }
 .iconBtn{
-    color: #333;
-    height: 15px ;
-    width: 15px ;
+    background-image: url("../../assets/ic_Search.png");
+    height: 18px ;
+    width: 18px ;
+    background-size: cover;
     &:hover {
         cursor: pointer;
     }
