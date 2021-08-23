@@ -2,12 +2,11 @@
 import axios from 'axios';
 import React, { useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
-import CategoriesCotext from '../components/context/CategoriesContext';
+import CategoriesContext from '../components/context/CategoriesContext';
 import ItemsList from '../components/ItemsList/ItemsList';
 
 const Items = ({ items }) => {
-  const { setCategories } = useContext(CategoriesCotext);
-  console.log(items);
+  const { setCategories } = useContext(CategoriesContext);
   useEffect(() => {
     setCategories(items.categories);
   }, []);

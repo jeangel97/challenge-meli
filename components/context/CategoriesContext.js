@@ -1,7 +1,7 @@
 import React from 'react';
 
-const CategoriesCotext = React.createContext({
+const CategoriesContext = React.createContext({
   categories: [],
   setCategories: () => {},
 });
-export default CategoriesCotext;
+export default CategoriesContext;

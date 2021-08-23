@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import BreadCrumb from '../BreadCrumb/BreadCrumb';
-import CategoriesCotext from '../context/CategoriesContext';
+import CategoriesContext from '../context/CategoriesContext';
 import Navbar from '../Navbar/Navbar';
 import styles from './Layout.module.scss';
 
@@ -18,14 +18,14 @@ export default function Layout({ children }) {
       </Head>
       <div className={`grid-container ${styles.container}`}>
         <Navbar />
-        <CategoriesCotext.Provider
+        <CategoriesContext.Provider
           value={contextValues}
         >
           <BreadCrumb
             categories={categories}
           />
           {children}
-        </CategoriesCotext.Provider>
+        </CategoriesContext.Provider>
       </div>
     </>
   );
