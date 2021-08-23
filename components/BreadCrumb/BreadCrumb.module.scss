@@ -1,0 +1,23 @@
+.breadcrumbContainer{
+  grid-column: col 2 / span 12;
+  grid-row: row 2;
+}
+.breadcrumb{
+  padding: 0px 0px;
+  list-style: none;
+  color: grey;
+}
+    
+.breadcrumbItem{
+  display: inline;
+  font-size: 14px;
+}
+
+.breadcrumb li+li:before{
+  padding: 16px;
+  color: grey;
+  content: ">";
+}
+.marginDiv{
+  margin-top: 40px;
+}

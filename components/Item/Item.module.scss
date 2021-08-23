@@ -1,0 +1,82 @@
+@import "../../styles/mixins";
+
+.itemContainer{
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+.itemShippingIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-left: 10px;
+}
+.itemShippingIcon{
+    background-image: url("../../assets/ic_shipping.png");
+    width: 18px;
+    height: 18px;
+}
+.itemImgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    border-radius:4px ;
+    -webkit-border-radius:4px ;
+    -moz-border-radius:4px ;
+    -ms-border-radius:4px ;
+    -o-border-radius:4px ;
+    margin:auto;
+    @include lg(){
+        height: 180px;
+        width: 180px;
+        margin: 16px;
+    }
+    @include xlg(){
+        height: auto;
+        width: 100%;
+    }
+}
+.itemDetailsContainer{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #eeeeee;
+}
+.itemPriceShippingContainer{
+    display: flex;
+    flex-direction: row;
+}
+.itemTitleContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+.itemPrice{
+    font-size: large;
+    font-weight: normal;
+    margin-top: 32px;
+    @include lg(){
+        font-size: 24px;
+
+    }
+}
+.itemTitle{
+    font-size: medium;
+    font-weight: normal;
+    @include lg(){
+        font-size: 18px;
+    }
+}
+.itemAddressContainer{
+    display: flex;
+    justify-content: center;
+    color: #999999;
+    font-size: 12px;
+    margin-top: 32px;
+}
