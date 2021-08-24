@@ -11,6 +11,7 @@ describe('ItemList Component', () => {
       picture: '/../../assets/Logo_ML.png',
       condition: 'new',
       free_shipping: false,
+      address: 'capital federal',
     },
     {
       id: 'MLA678267666',
@@ -19,6 +20,7 @@ describe('ItemList Component', () => {
       picture: '/../../assets/Logo_ML.png',
       condition: 'new',
       free_shipping: true,
+      address: 'capital federal',
     },
     {
       id: 'MLA882227206',
@@ -27,6 +29,7 @@ describe('ItemList Component', () => {
       picture: '/../../assets/Logo_ML.png',
       condition: 'new',
       free_shipping: false,
+      address: 'capital federal',
     }];
     const component = render(<ItemsList items={items} />);
     component.getByText('Peluches Pokemon Go 20 Cm Varios Modelos Pikachu Pokemones');

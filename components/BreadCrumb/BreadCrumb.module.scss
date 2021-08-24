@@ -1,7 +1,3 @@
-.breadcrumbContainer{
-  grid-column: col 2 / span 12;
-  grid-row: row 2;
-}
 .breadcrumb{
   padding: 0px 0px;
   list-style: none;
@@ -14,10 +10,10 @@
 }
 
 .breadcrumb li+li:before{
-  padding: 16px;
+  padding: 10px;
   color: grey;
   content: ">";
 }
 .marginDiv{
-  margin-top: 40px;
+  height: 50px;
 }

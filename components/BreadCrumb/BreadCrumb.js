@@ -16,7 +16,7 @@ const BreadCrumb = ({ categories }) => {
     );
   }
   return (
-    <div className={styles.marginDiv} />
+    <div className={`col-10 col-offset-2 ${styles.marginDiv}`} />
   );
 };
 

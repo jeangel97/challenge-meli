@@ -9,7 +9,7 @@ const Items = ({ items }) => {
   const { setCategories } = useContext(CategoriesContext);
   useEffect(() => {
     setCategories(items.categories);
-  }, []);
+  }, [items.categories]);
 
   return (
     <ItemsList
