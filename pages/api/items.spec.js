@@ -11,7 +11,6 @@ describe('items api endpoint', () => {
       },
     });
     await handlerSearch(req, res);
-    console.log(res);
     expect(res._getStatusCode()).toBe(
       200,
     );
@@ -24,7 +23,6 @@ describe('items api endpoint', () => {
       },
     });
     await handlerSearch(req, res);
-    console.log(res);
     expect(res._getStatusCode()).toBe(
       200,
     );

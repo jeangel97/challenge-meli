@@ -38,3 +38,21 @@ export const getCategories = (filters) => {
   }
   return categories;
 };
+
+export const singleItemMap = (item, description) => {
+  const itemMapped = {
+    id: item.id,
+    title: item.title,
+    price: {
+      currency: item.currency_id,
+      amount: item.price,
+      decimals: Number((item.price - Math.floor(item.price)).toFixed(2)),
+    },
+    picture: item.thumbnail.replace(/-I\./, '-F.'),
+    condition: item.condition,
+    sold_quantity: item.sold_quantity,
+    free_shipping: item.shipping.free_shipping,
+    description,
+  };
+  return itemMapped;
+};
