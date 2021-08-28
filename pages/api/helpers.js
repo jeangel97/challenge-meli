@@ -12,7 +12,7 @@ export const itemsMapped = (items) => {
       price: {
         currency: item.prices.presentation.display_currency,
         amount: item.price,
-        decimals: item.price - Math.floor(item.price) ?? 0,
+        decimals: Number((item.price - Math.floor(item.price)).toFixed(2)),
       },
       picture: item.thumbnail.replace(/-I\./, '-F.'),
       condition: item.condition,

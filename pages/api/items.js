@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { itemsMapped, author, getCategories } from './helpers';
 
-export default async function handler(req, res) {
+export default async function handlerSearch(req, res) {
   try {
     const query = req.query.q;
     const responseApi = await axios.get(`https://api.mercadolibre.com/sites/MLA/search?q="${query}"&limit=4`);

@@ -15,8 +15,8 @@ function ItemsList({ items }) {
 }
 
 ItemsList.propTypes = {
-  items: PropTypes.arrayOf({
-    item: PropTypes.shape({
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
       id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       price: PropTypes.shape({
@@ -29,6 +29,6 @@ ItemsList.propTypes = {
       free_shipping: PropTypes.bool.isRequired,
       address: PropTypes.string.isRequired,
     }),
-  }),
+  ),
 };
 export default ItemsList;
