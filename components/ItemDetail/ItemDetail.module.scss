@@ -1,0 +1,71 @@
+@import "../../styles/mixins";
+
+.itemDetailMainContainer{
+    background-color: white;
+}
+.firstContainer{
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
+.secondContainer{
+    padding-top: 32px;
+    padding-right: 32px;
+}
+.itemDetailDescriptionHeadText{
+    font-size: 28px;
+    font-weight: normal;
+}
+.itemDetailDescriptionParagraph{
+    color: #999999;
+    margin-top: 32px;
+    font-size: 16px;
+}
+.itemDetailConditionQuantity{
+    font-size: 14px;
+}
+.itemDetailTitle{
+    font-size: 18px;
+    margin-top: 16px;
+    @include md(){
+        font-size: 24px;
+
+    }
+}
+.itemDetailPrice{
+    font-size: 25px ;
+    margin-top: 32px;
+    @include md(){
+        font-weight: normal;
+        font-size: 46px;
+    }
+}
+.itemDetailPriceDecimals{
+    font-size: 15px;
+    @include md(){
+        font-size: 22px;
+    }
+}
+.itemDetailButton{
+    background-color: #3582fa;
+    align-self: center;
+    border: none;
+    color: white;
+    margin-top: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    padding: 10px 20px;
+    &:hover {
+        cursor: pointer;
+    }
+    @include md (){
+        padding: 15px 32px;
+        font-size: 16px;
+        width: 100%;
+    }
+}

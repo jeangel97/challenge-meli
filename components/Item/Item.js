@@ -9,7 +9,7 @@ import styles from './Item.module.scss';
 
 function Item({ item }) {
   return (
-    <Link href="/" passHref>
+    <Link href={`items/${item.id}`} passHref>
       <div className={`grid-container-10-cols ${styles.itemContainer}`}>
         <div className={`col-2 col-align-self-center ${styles.itemImgContainer}`}>
           <Image src={item.picture} width={180} height={180} />

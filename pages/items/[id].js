@@ -1,10 +1,16 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/require-default-props */
 import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
+import ItemDetail from '../../components/ItemDetail/ItemDetail';
 
 const Item = ({ item }) => (
-  <div>{JSON.stringify(item)}</div>
+  <div className="col-10 col-offset-2">
+    <ItemDetail
+      item={item.item}
+    />
+  </div>
 );
 export const getServerSideProps = async ({ query }) => {
   const { id } = query;
