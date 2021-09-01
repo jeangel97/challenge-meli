@@ -59,7 +59,7 @@
     font-size: large;
     font-weight: normal;
     margin-top: 32px;
-    @include lg(){
+    @include sm(){
         font-size: 24px;
 
     }
@@ -67,7 +67,7 @@
 .itemTitle{
     font-size: medium;
     font-weight: normal;
-    @include lg(){
+    @include sm(){
         font-size: 18px;
     }
 }

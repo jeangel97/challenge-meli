@@ -1,4 +1,4 @@
-import { getCategories, itemsMapped } from './helpers';
+import { getCategories, itemsMapped, singleItemMap } from './helpers';
 
 describe('helper functions', () => {
   test('should map the item to the defined format', () => {
@@ -187,5 +187,82 @@ describe('helper functions', () => {
     const filters = [];
     const categories = getCategories(filters);
     expect(categories).toStrictEqual([]);
+  });
+  test('should map single item format', () => {
+    const item = {
+      id: 'MLA920235742',
+      site_id: 'MLA',
+      title: 'Nintendo Switch 32gb Animal Crossing: New Horizons Color Verde Pastel Y Azul Pastel',
+      seller: {},
+      price: 75218,
+      prices: {
+        id: 'MLA920235742',
+        prices: [
+          {
+            id: '10',
+            type: 'standard',
+            conditions: {},
+            amount: 75218,
+            regular_amount: null,
+            currency_id: 'ARS',
+            exchange_rate_context: 'DEFAULT',
+            metadata: {
+            },
+            last_updated: '2021-08-27T22:24:51Z',
+          },
+        ],
+        presentation: {
+          display_currency: 'ARS',
+        },
+        payment_method_prices: [
+        ],
+        reference_prices: [
+        ],
+        purchase_discounts: [
+        ],
+      },
+      sale_price: null,
+      currency_id: 'ARS',
+      available_quantity: 10,
+      sold_quantity: 30,
+      buying_mode: 'buy_it_now',
+      listing_type_id: 'gold_special',
+      stop_time: '2041-05-06T04:00:00.000Z',
+      condition: 'new',
+      permalink: 'https://www.mercadolibre.com.ar/nintendo-switch-32gb-animal-crossing-new-horizons-color-verde-pastel-y-azul-pastel/p/MLA15698835',
+      thumbnail: 'http://http2.mlstatic.com/D_913685-MLA41956780418_052020-I.jpg',
+      thumbnail_id: '913685-MLA41956780418_052020',
+      accepts_mercadopago: true,
+      installments: {},
+      address: {
+        state_id: 'AR-C',
+        state_name: 'Capital Federal',
+        city_id: 'QVItQ1BhcnF1ZSBDaGFz',
+        city_name: 'Parque Chas',
+      },
+      shipping: {
+        free_shipping: true,
+        mode: 'me2',
+        tags: [],
+        logistic_type: 'cross_docking',
+        store_pick_up: false,
+      },
+      seller_address: {},
+      attributes: [],
+      original_price: null,
+      category_id: 'MLA438566',
+      official_store_id: null,
+      domain_id: 'MLA-GAME_CONSOLES',
+      catalog_product_id: 'MLA15698835',
+      tags: [],
+      catalog_listing: true,
+      use_thumbnail_id: true,
+      order_backend: 1,
+    };
+    const description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+    const itemMapped = singleItemMap(item, description);
+    expect(itemMapped.title).toBe('Nintendo Switch 32gb Animal Crossing: New Horizons Color Verde Pastel Y Azul Pastel');
+    expect(itemMapped.sold_quantity).toBe(30);
+    expect(itemMapped.description).toBe('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
   });
 });
