@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: pages/index.js</title>
+    <title>JSDoc: Source: pages/404.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: pages/index.js</h1>
+    <h1 class="page-title">Source: pages/404.js</h1>
 
     
 
@@ -26,20 +26,12 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React, { useContext, useEffect } from 'react';
-import CategoriesContext from '../context/CategoriesContext';
+            <pre class="prettyprint source linenums"><code>import React from 'react';
 /**
- * Home page
+ * 404 page
  */
-export default function Home() {
-  const { setCategories } = useContext(CategoriesContext);
-
-  useEffect(() => {
-    setCategories([]);
-  }, []);
-  return (
-    &lt;div />
-  );
+export default function Custom404() {
+  return &lt;h1 className="col-10 col-offset-2 notFound">404 - Page Not Found&lt;/h1>;
 }
 </code></pre>
         </article>
