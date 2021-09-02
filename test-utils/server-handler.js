@@ -55,6 +55,7 @@ const handlers = [
       picture: '/../../assets/logito.png',
       condition: 'new',
       free_shipping: false,
+      sold_quantity: 24,
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
   }))),
