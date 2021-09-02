@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import Head from 'next/head';
 import React, { useState } from 'react';
+import CategoriesContext from '../../context/CategoriesContext';
 import BreadCrumb from '../BreadCrumb/BreadCrumb';
-import CategoriesContext from '../context/CategoriesContext';
 import Navbar from '../Navbar/Navbar';
 import styles from './Layout.module.scss';
 

@@ -188,6 +188,36 @@ describe('helper functions', () => {
     const categories = getCategories(filters);
     expect(categories).toStrictEqual([]);
   });
+
+  test('should show empty array when there is no path from root values', () => {
+    const filters = [{
+      id: 'category',
+      name: 'Categories',
+      type: 'text',
+      values: [
+        {
+          id: 'MLA373840',
+          name: 'Videojuegos',
+          path_from_root: [
+          ],
+        },
+      ],
+    },
+    {
+      id: 'FRANCHISE',
+      name: 'Franquicia',
+      type: 'STRING',
+      values: [
+        {
+          id: '5265396',
+          name: 'The Last of Us',
+        },
+      ],
+    }];
+    const categories = getCategories(filters);
+    expect(categories).toStrictEqual([]);
+  });
+
   test('should map single item format', () => {
     const item = {
       id: 'MLA920235742',

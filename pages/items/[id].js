@@ -4,6 +4,7 @@ import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
+import { API_ROUTE_ITEMS_ID } from '../../config';
 
 const Item = ({ item }) => (
   <div className="col-10 col-offset-2">
@@ -15,7 +16,8 @@ const Item = ({ item }) => (
 export const getServerSideProps = async ({ query }) => {
   const { id } = query;
 
-  const response = await axios.get(`http://localhost:3000/api/items/${id}`);
+  const response = await axios.get(`${API_ROUTE_ITEMS_ID + id}`);
+
   const item = response.data;
   return {
     props: {

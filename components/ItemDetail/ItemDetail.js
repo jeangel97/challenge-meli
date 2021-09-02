@@ -8,14 +8,14 @@ export default function ItemDetail({ item }) {
   return (
 
     <div className={`grid-container-10-cols ${styles.itemDetailMainContainer}`}>
-      <div className={`col-7 ${styles.firstContainer}`}>
+      <div className="col-7">
         <Image src={item.picture} width={680} height={680} />
         <div>
           <h1 className={styles.itemDetailDescriptionHeadText}>Descripción del producto</h1>
           <p className={styles.itemDetailDescriptionParagraph}>{item.description}</p>
         </div>
       </div>
-      <div className={`col-3 ${styles.secondContainer}`}>
+      <div className="col-3">
         <p>
           {item.condition === 'new' ? 'Nuevo' : 'Usado'}
           &nbsp;
