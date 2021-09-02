@@ -1,4 +1,4 @@
-import { getCategories, itemsMapped, singleItemMap } from './helpers';
+import { getCategories, itemsMapped, singleItemMap } from '../../../pages/api/helpers';
 
 describe('helper functions', () => {
   test('should map the item to the defined format', () => {

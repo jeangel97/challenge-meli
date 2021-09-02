@@ -1,6 +1,6 @@
 import { waitFor, screen } from '@testing-library/react';
 import { getPage } from 'next-page-tester';
-import { server } from '../../test-utils/mock-server';
+import { server } from '../../../test-utils/mock-server';
 
 describe('Items/:id Page', () => {
   beforeAll(() => server.listen());

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import BreadCrumb from './BreadCrumb';
+import BreadCrumb from '../../components/BreadCrumb/BreadCrumb';
 
 describe('BreadCrumb Component', () => {
   test('should render correctly', () => {

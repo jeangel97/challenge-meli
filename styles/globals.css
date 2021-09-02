@@ -234,36 +234,3 @@ p {
   grid-column-start: 12;
 }
 
-.col-justify-self-start{
-  -ms-justify-self:start;
-  justify-self:start;
-}
-.col-justify-self-end{
-  -ms-justify-self:end;
-  justify-self:end;
-}
-.col-justify-self-center{
-  -ms-justify-self:center;
-  justify-self:center;
-}
-.col-justify-self-stretch{
- -ms-justify-self:stretch;
-  justify-self:stretch;
-}
-
-.col-align-self-start{
- -ms-justify-self:start;
-  align-self:start;
-}
-.col-align-self-end{
-  -ms-align-self:end;
-  align-self:end;
-}
-.col-align-self-center{
-  -ms-align-self:center;
-  align-self:center;
-}
-.col-align-self-stretch{
-  -ms-align-self:stretch;
-  align-self:stretch;
-}

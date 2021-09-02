@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import CategoriesContext from './CategoriesContext';
+import CategoriesContext from '../../context/CategoriesContext';
 
 describe('Categories Context', () => {
   test('should create context', () => {

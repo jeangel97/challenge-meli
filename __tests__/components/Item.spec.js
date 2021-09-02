@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Item from './Item';
+import Item from '../../components/Item/Item';
 
 describe('Item Component', () => {
   test('should render correctly', () => {

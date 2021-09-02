@@ -1,21 +1,21 @@
 /* eslint-disable no-underscore-dangle */
 import { createMocks, createRequest } from 'node-mocks-http';
-import handler from './[id]';
+import handlerSearch from '../../../pages/api/items';
 
-describe('Items [id] route api', () => {
+describe('items api endpoint', () => {
   test('should return status 200 ', async () => {
     const { req, res } = createMocks({
       method: 'GET',
       query: {
-        id: 'MLA920235742',
+        q: 'pikachu',
       },
     });
-    await handler(req, res);
+    await handlerSearch(req, res);
     expect(res._getStatusCode()).toBe(
       200,
     );
   });
-  test('should throw error when id is not defined', async () => {
+  test('should throw error when query it is not defined  ', async () => {
     try {
       const req = createRequest({
         method: 'GET',
@@ -23,7 +23,7 @@ describe('Items [id] route api', () => {
           z: 'pikachu',
         },
       });
-      await handler(req);
+      await handlerSearch(req);
     } catch (error) {
       expect(error).toBeDefined();
     }

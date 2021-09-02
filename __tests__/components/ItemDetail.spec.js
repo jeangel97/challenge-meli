@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ItemDetail from './ItemDetail';
+import ItemDetail from '../../components/ItemDetail/ItemDetail';
 
 describe('ItemDetail Component', () => {
   test('should render correctly', () => {

@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import { render, fireEvent } from '@testing-library/react';
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 
 describe('Navbar Component', () => {
   const useRouter = jest.spyOn(require('next/router'), 'useRouter');

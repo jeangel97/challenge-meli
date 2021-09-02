@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ItemsList from './ItemsList';
+import ItemsList from '../../components/ItemsList/ItemsList';
 
 describe('ItemList Component', () => {
   test('should render correctly', () => {

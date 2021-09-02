@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import { render } from '@testing-library/react';
-import Layout from './Layout';
+import Layout from '../../components/Layout/Layout';
 
 describe('Layout Component', () => {
   test('should render correctly', () => {
