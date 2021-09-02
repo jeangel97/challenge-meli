@@ -1,7 +1,9 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
+
 
 .navbar{
-    background-color: #ffe600;
+    background-color: $yellow;
     height: 50px;
     margin: 0 -9999rem;
 }

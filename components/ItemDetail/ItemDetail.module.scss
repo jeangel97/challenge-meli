@@ -1,4 +1,6 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
+
 
 .itemDetailMainContainer{
     background-color: white;
@@ -10,7 +12,7 @@
     font-weight: normal;
 }
 .itemDetailDescriptionParagraph{
-    color: #999999;
+    color: $grey;
     margin-top: 32px;
     font-size: 16px;
 }
@@ -39,7 +41,7 @@
     }
 }
 .itemDetailButton{
-    background-color: #3582fa;
+    background-color: $blue;
     align-self: center;
     border: none;
     color: white;

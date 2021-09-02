@@ -1,7 +1,9 @@
+@import "../../styles/variables";
+
 .breadcrumb{
   padding: 0px 0px;
   list-style: none;
-  color: grey;
+  color: $darkGrey;
 }
     
 .breadcrumbItem{
@@ -11,7 +13,7 @@
 
 .breadcrumb li+li:before{
   padding: 10px;
-  color: grey;
+  color: $darkGrey;
   content: ">";
 }
 .marginDiv{

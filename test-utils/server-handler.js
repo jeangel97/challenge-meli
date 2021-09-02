@@ -2,11 +2,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* istanbul ignore file */
 import { rest } from 'msw';
-
 import { API_ROUTE_ITEMS, API_ROUTE_ITEMS_ID } from '../config';
+
 /**
  * Mock handlers for the serverSideProps tests
  */
+
 const handlers = [
   rest.get(API_ROUTE_ITEMS, (_req, res, ctx) => res(ctx.json({
     author: { name: 'Jesus Angel', last_name: 'Feliciano Martinez' },

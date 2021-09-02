@@ -1,9 +1,11 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
+
 
 .itemContainer{
     background-color: white;
     width: 100%;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $lightGrey;
     &:hover {
         cursor: pointer;
     }
@@ -44,7 +46,7 @@
 .itemDetailsContainer{
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $lightGrey;
 }
 .itemPriceShippingContainer{
     display: flex;
@@ -74,7 +76,7 @@
 .itemAddressContainer{
     display: flex;
     justify-content: center;
-    color: #999999;
+    color: $grey;
     font-size: 12px;
     margin-top: 32px;
 }
