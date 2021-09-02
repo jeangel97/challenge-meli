@@ -30,7 +30,7 @@ npm run start
 El cual nos levantara el servidor al que podemos acceder en la ruta [http://localhost:3000](http://localhost:3000)
 
 ## Documentación
-Para acceder a la documentación del proyecto abrir el archivo [index](/docs/index.js) que se encuentra en la carpeta [docs](/docs) de preferencia usando live server en vs code
+Para acceder a la documentación del proyecto abrir el archivo [index](/docs/index.html) que se encuentra en la carpeta [docs](/docs) de preferencia usando live server en vs code
 ## Hecho con :wrench:
 * React JS
 * Next.JS
