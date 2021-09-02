@@ -6,7 +6,11 @@ import Image from 'next/image';
 import PropTypes from 'prop-types';
 
 import styles from './Item.module.scss';
-
+/**
+ * Component to item result of the search
+ * @param props - props object of react component
+ * @param props.item - object of the item to show in the result of the search
+ */
 function Item({ item }) {
   return (
     <Link href={`/items/${item.id}`} passHref>

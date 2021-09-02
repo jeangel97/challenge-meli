@@ -3,10 +3,13 @@ import Image from 'next/image';
 import CurrencyFormat from 'react-currency-format';
 import React from 'react';
 import styles from './ItemDetail.module.scss';
-
+/**
+ * Component to show the detailed view of the item
+ * @param props - props object of react component
+ * @param props.item - item object with description to show for detail
+ */
 export default function ItemDetail({ item }) {
   return (
-
     <div className={`grid-container-10-cols ${styles.itemDetailMainContainer}`}>
       <div className="col-7">
         <Image src={item.picture} width={680} height={680} />

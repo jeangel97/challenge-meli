@@ -5,7 +5,11 @@ import CategoriesContext from '../../context/CategoriesContext';
 import BreadCrumb from '../BreadCrumb/BreadCrumb';
 import Navbar from '../Navbar/Navbar';
 import styles from './Layout.module.scss';
-
+/**
+ * Layout of the page including the navbar and the breadcrumbs
+ * @param props - props object of react component
+ * @param props.children - children to render inside the layout
+ */
 export default function Layout({ children }) {
   const [categories, setCategories] = useState([]);
   const contextValues = { categories, setCategories };

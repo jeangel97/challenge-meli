@@ -5,7 +5,11 @@ import PropTypes from 'prop-types';
 import ItemsList from '../components/ItemsList/ItemsList';
 import { API_ROUTE_ITEMS } from '../config';
 import CategoriesContext from '../context/CategoriesContext';
-
+/**
+ * Page to show the list of items from the search result
+ * @param props - props object of react component
+ * @param props.items - object of the response from the search api
+ */
 const Items = ({ items }) => {
   const { setCategories } = useContext(CategoriesContext);
   useEffect(() => {

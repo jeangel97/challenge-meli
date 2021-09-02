@@ -1,7 +1,11 @@
 import axios from 'axios';
 import { API_MELI_ITEM } from '../../../config';
 import { author, singleItemMap } from '../helpers';
-
+/**
+ * API route for consuming the item:id and item:id/description endpoints
+ * @param {*} req - request object of the api
+ * @param {*} res - response object of the api
+ */
 export default async function handler(req, res) {
   try {
     const { id } = req.query;

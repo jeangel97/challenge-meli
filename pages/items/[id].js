@@ -5,7 +5,11 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import { API_ROUTE_ITEMS_ID } from '../../config';
-
+/**
+ * Item page to render the detail
+ * @param props - props object of react component
+ * @param prop.item - item object to show
+ */
 const Item = ({ item }) => (
   <div className="col-10 col-offset-2">
     <ItemDetail

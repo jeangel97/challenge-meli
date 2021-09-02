@@ -2,7 +2,11 @@
 import axios from 'axios';
 import { API_MELI_SEARCH } from '../../config';
 import { itemsMapped, author, getCategories } from './helpers';
-
+/**
+ * API route of the search endpoint
+ * @param {*} req - request object of the api
+ * @param {*} res - response object of the api
+ */
 export default async function handlerSearch(req, res) {
   try {
     const query = req.query.q;

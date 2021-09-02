@@ -3,8 +3,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Item from '../Item/Item';
 
-// import styles from './ItemsList.module.scss';
-
+/**
+ * Component to show the list of results in the search
+ * @param props - props object of react component
+ * @param props.items - array of items to show in the list
+ */
 function ItemsList({ items }) {
   return (
     <div className="col-10 col-offset-2">

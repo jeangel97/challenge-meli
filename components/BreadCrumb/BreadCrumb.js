@@ -2,7 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './BreadCrumb.module.scss';
-
+/**
+ * Component to show the breadcrumb path of the categories
+ * @param props - props object of react component
+ * @param props.categories - Array of categories to show
+ */
 const BreadCrumb = ({ categories }) => {
   if (categories.length !== 0) {
     return (

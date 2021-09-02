@@ -4,7 +4,9 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import styles from './Navbar.module.scss';
-
+/**
+ * Component to navigate and search for results
+ */
 export default function Navbar() {
   const [search, setSearch] = useState('');
   const router = useRouter();
@@ -32,7 +34,6 @@ export default function Navbar() {
         query: { search },
       },
     );
-    // searchItem(search);
   };
   return (
     <div className={`col-10 col-offset-2 ${styles.navbar} `}>
