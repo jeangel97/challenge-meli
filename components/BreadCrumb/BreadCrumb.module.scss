@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.breadcrumb{
+  padding: 0px 0px;
+  list-style: none;
+  color: $darkGrey;
+}
+    
+.breadcrumbItem{
+  display: inline;
+  font-size: 14px;
+}
+
+.breadcrumb li+li:before{
+  padding: 10px;
+  color: $darkGrey;
+  content: ">";
+}
+.marginDiv{
+  margin-top: 40px;
+}
