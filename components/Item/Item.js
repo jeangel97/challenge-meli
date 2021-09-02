@@ -16,7 +16,7 @@ function Item({ item }) {
     <Link href={`/items/${item.id}`} passHref>
       <div className={`grid-container-10-cols ${styles.itemContainer}`}>
         <div className={`col-2 col-align-self-center ${styles.itemImgContainer}`}>
-          <Image src={item.picture} width={180} height={180} />
+          <Image src={item.picture} width={180} height={180} alt={item.title} />
         </div>
         <div className={`col-5 ${styles.itemDetailsContainer}`}>
           <div className={styles.itemPriceShippingContainer}>

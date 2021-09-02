@@ -14,7 +14,7 @@ function ItemDetail({ item }) {
   return (
     <div className={`grid-container-10-cols ${styles.itemDetailMainContainer}`}>
       <div className="col-7">
-        <Image src={item.picture} width={680} height={680} />
+        <Image src={item.picture} width={680} height={680} alt={item.title} />
         <div>
           <h1 className={styles.itemDetailDescriptionHeadText}>Descripción del producto</h1>
           <p className={styles.itemDetailDescriptionParagraph}>{item.description}</p>
